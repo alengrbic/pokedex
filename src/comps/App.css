@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 .main {
@@ -7,7 +8,7 @@ body {
   margin-top: 2rem;
   text-align: center;
   background-color: red;
-  border: 2rem solid red;
+  border: 2px solid red;
   border-radius: 15px;
   min-height: 70vh;
   max-width: 500px;
@@ -17,12 +18,12 @@ body {
 }
 
 .containers {
-  border: 2rem solid red;
+  border: 1rem solid red;
   border-radius: 15px;
   min-height: 50vh;
   max-width: 50vw;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 .btn {

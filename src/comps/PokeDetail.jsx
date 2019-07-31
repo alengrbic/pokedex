@@ -6,7 +6,7 @@ export class PokeDetail extends Component {
     return (
       <div>
         <div className="cont">
-          <img src={this.props.image} alt="" width="200px" height="200px" />
+          <img src={this.props.image} alt="" width="100px" height="100px" />
         </div>
         <div className="texts">
           <h2>

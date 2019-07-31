@@ -6,6 +6,11 @@
   margin-bottom: 1rem;
 }
 
+img {
+  width: 200px;
+  height: 200px;
+}
+
 .texts {
   background-color: white;
   min-height: 30vh;
@@ -51,5 +56,9 @@
     border: 1px solid red;
     border-radius: 15px;
     margin-bottom: 0.1rem;
+  }
+  img {
+    width: 100px;
+    height: 100px;
   }
 }
