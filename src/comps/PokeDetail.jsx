@@ -5,16 +5,8 @@ export class PokeDetail extends Component {
   render() {
     return (
       <div>
-        <div
-          style={{
-            backgroundColor: "white",
-            minHeight: "23vh",
-            border: "1px solid red",
-            borderRadius: "15px",
-            marginBottom: "1rem"
-          }}
-        >
-          <img src={this.props.image} alt="" width="px" height="200px" />
+        <div className="cont">
+          <img src={this.props.image} alt="" width="200px" height="200px" />
         </div>
         <div className="texts">
           <h2>

@@ -39,19 +39,10 @@ export class App extends Component {
     }
   };
 
-  styles = {
-    border: "2rem solid red",
-    borderRadius: "15px",
-    minHeight: "50vh",
-    maxWidth: "50vw",
-    margin: "auto",
-    marginTop: "1rem"
-  };
-
   render() {
     return (
       <div className="main">
-        <div style={this.styles}>
+        <div className="containers" style={this.styles}>
           <PokeDetail
             name={this.state.name}
             image={this.state.url}
