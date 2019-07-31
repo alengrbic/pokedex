@@ -4,6 +4,7 @@
   border: 1px solid red;
   border-radius: 15px;
   margin-bottom: 1rem;
+  position: absolute;
 }
 
 img {
