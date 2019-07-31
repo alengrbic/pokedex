@@ -26,12 +26,14 @@ img {
 .texts h4 {
   padding: 5px;
   font-weight: 200;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 
 .texts h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-block-end: 0;
   margin-block-start: 0;
   width: 30%;
@@ -51,7 +53,7 @@ img {
 
 @media screen and (max-width: 360px) {
   .texts h4 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 3px;
   }
   .texts h2 {
@@ -59,7 +61,7 @@ img {
     font-size: 1rem;
   }
   .texts h3 {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
 
   .texts {
@@ -73,5 +75,19 @@ img {
     width: 100px;
     height: 100px;
     margin-bottom: 1110px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .texts h4 {
+    font-size: 0.6rem;
+    padding: 3px;
+  }
+  .texts h2 {
+    padding: 3px;
+    font-size: 1rem;
+  }
+  .texts h3 {
+    font-size: 0.4rem;
   }
 }
