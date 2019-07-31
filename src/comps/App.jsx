@@ -1,0 +1,76 @@
+import React, { Component } from "react";
+import Pokedex from "pokedex-promise-v2";
+import PokeDetail from "./PokeDetail";
+import "./App.css";
+const P = new Pokedex();
+
+export class App extends Component {
+  constructor() {
+    super();
+    this.handlePokedex = this.handlePokedex.bind(this);
+  }
+  state = {
+    name: "",
+    url: "",
+    term: "",
+    text: "",
+    type: ""
+  };
+
+  async handlePokedex() {
+    const response = await P.getPokemonByName(this.state.term.toLowerCase());
+    const response2 = await P.getPokemonSpeciesByName(
+      this.state.term.toLowerCase()
+    );
+    console.log(response);
+    if (this.state.term !== "") {
+      this.setState({ name: response.name });
+      this.setState({ url: response.sprites.front_default });
+      this.setState({ text: response2.flavor_text_entries[2].flavor_text });
+      this.setState({ type: response.types[0].type.name });
+    } else {
+      alert("Please enter a valid Pokemon name");
+    }
+  }
+
+  keypressed = event => {
+    if (event.key === "Enter") {
+      this.handlePokedex();
+    }
+  };
+
+  styles = {
+    border: "2rem solid red",
+    borderRadius: "15px",
+    minHeight: "50vh",
+    maxWidth: "50vw",
+    margin: "auto",
+    marginTop: "1rem"
+  };
+
+  render() {
+    return (
+      <div className="main">
+        <div style={this.styles}>
+          <PokeDetail
+            name={this.state.name}
+            image={this.state.url}
+            text={this.state.text}
+            types={this.state.type}
+          />
+          <input
+            type="text"
+            value={this.state.term}
+            onChange={e => {
+              this.setState({ term: e.target.value });
+            }}
+            onKeyPress={this.keypressed}
+          />
+          <button className="btn" onClick={this.handlePokedex} />
+        </div>
+      </div>
+    );
+  }
+}
+
+export default App;

@@ -1,0 +1,52 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.main {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: red;
+  border: 2rem solid red;
+  border-radius: 15px;
+  min-height: 70vh;
+  max-width: 25vw;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn {
+  background-color: yellow;
+  border: 1px solid yellow;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  margin: auto;
+  margin-top: 2rem;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: inset 10px 10px 12px 0px rgba(245, 245, 68, 1);
+  -moz-box-shadow: inset 10px 10px 12px 0px rgba(245, 245, 68, 1);
+  box-shadow: inset 10px 10px 12px 0px rgb(248, 248, 99);
+}
+
+.btn:hover {
+  -webkit-box-shadow: inset 10px 10px 12px 0px rgba(51, 51, 25, 0.5);
+  -moz-box-shadow: inset 10px 10px 12px 0px rgba(51, 51, 25, 0.5);
+  box-shadow: inset 10px 10px 12px 0px rgba(51, 51, 25, 0.5);
+}
+
+input {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+}
