@@ -1,10 +1,10 @@
 .cont {
   background-color: white;
   min-height: 20vh;
+  position: static;
   border: 1px solid red;
   border-radius: 15px;
   margin-bottom: 1rem;
-  position: absolute;
 }
 
 img {
