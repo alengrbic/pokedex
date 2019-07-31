@@ -51,6 +51,7 @@ export class App extends Component {
           />
           <input
             type="text"
+            placeholder="Enter Pokemon name.."
             value={this.state.term}
             onChange={e => {
               this.setState({ term: e.target.value });
