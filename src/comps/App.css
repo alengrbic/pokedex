@@ -7,8 +7,8 @@ body {
   margin: auto;
   margin-top: 2rem;
   text-align: center;
-  background-color: red;
-  border: 2px solid red;
+  background-color: crimson;
+  border: 2px solid crimson;
   border-radius: 15px;
   min-height: 70vh;
   max-width: 500px;
@@ -18,7 +18,7 @@ body {
 }
 
 .containers {
-  border: 1rem solid red;
+  border: 1rem solid crimson;
   border-radius: 15px;
   min-height: 50vh;
   max-width: 50vw;

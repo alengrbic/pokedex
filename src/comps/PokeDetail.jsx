@@ -41,9 +41,16 @@ export class PokeDetail extends Component {
         case "dark":
           return "#705848";
         default:
-          return "white";
+          return "none";
       }
     };
+
+    const borderControl = () => {
+      if (this.props.types === "") {
+        return "none";
+      }
+    };
+
     return (
       <div>
         <div className="cont">
@@ -53,7 +60,12 @@ export class PokeDetail extends Component {
           <h2>
             {this.props.name.charAt(0).toUpperCase() + this.props.name.slice(1)}
           </h2>
-          <h3 style={{ backgroundColor: backgroundClr() }}>
+          <h3
+            style={{
+              border: borderControl(),
+              backgroundColor: backgroundClr()
+            }}
+          >
             {this.props.types.toUpperCase()}
           </h3>
 

@@ -1,9 +1,12 @@
 .cont {
-  background-color: white;
-  min-height: 25vh;
+  background-color: #ddd;
+  min-height: 22vh;
   position: static;
-  border: 1px solid red;
+  border: 1px solid crimson;
   border-radius: 15px;
+
+  max-width: 30vh;
+  margin: auto;
   margin-bottom: 1rem;
 }
 
@@ -13,9 +16,9 @@ img {
 }
 
 .texts {
-  background-color: white;
+  background-color: #ddd;
   min-height: 30vh;
-  border: 1px solid red;
+  border: 1px solid crimson;
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
@@ -62,7 +65,7 @@ img {
   .texts {
     background-color: white;
     min-height: 30vh;
-    border: 1px solid red;
+    border: 1px solid crimson;
     border-radius: 15px;
     margin-bottom: 0.1rem;
   }
