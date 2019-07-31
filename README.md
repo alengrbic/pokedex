@@ -10,4 +10,5 @@ Made with create-react-app and using PokeAPI v2.
 
 ## Current known bugs
 
-Some Pokemon have their description in languages other than English
+Some Pokemon have their description in languages other than English.
+Mobile keyboard pushes container for images to scale down.
