@@ -1,6 +1,6 @@
 .cont {
   background-color: white;
-  min-height: 23vh;
+  min-height: 20vh;
   border: 1px solid red;
   border-radius: 15px;
   margin-bottom: 1rem;
@@ -13,21 +13,23 @@ img {
 
 .texts {
   background-color: white;
-  min-height: 30vh;
+  min-height: 25vh;
   border: 1px solid red;
   border-radius: 15px;
-  margin-bottom: 1rem;
-}
-
-.texts h2 {
-  padding: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .texts h4 {
-  padding: 10px;
+  padding: 5px;
   font-weight: 200;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
+}
+
+.texts h3 {
+  font-size: 1rem;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 @media screen and (max-width: 360px) {
@@ -60,5 +62,6 @@ img {
   img {
     width: 100px;
     height: 100px;
+    margin-bottom: 1110px;
   }
 }
