@@ -14,7 +14,8 @@ export class App extends Component {
     url: "",
     term: "",
     text: "",
-    type: ""
+    type: "",
+    classification: ""
   };
 
   async handlePokedex() {
@@ -23,10 +24,14 @@ export class App extends Component {
       this.state.term.toLowerCase()
     );
     console.log(response);
+    console.log(response2);
     if (this.state.term !== "") {
       this.setState({ name: response.name });
       this.setState({ url: response.sprites.front_default });
-      this.setState({ text: response2.flavor_text_entries[2].flavor_text });
+      this.setState({
+        text: response2.flavor_text_entries[2].flavor_text,
+        classification: response2.genera[2].genus
+      });
       this.setState({ type: response.types[0].type.name });
     } else {
       alert("Please enter a valid Pokemon name");
@@ -48,7 +53,9 @@ export class App extends Component {
             image={this.state.url}
             text={this.state.text}
             types={this.state.type}
+            classification={this.state.classification}
           />
+
           <input
             type="text"
             placeholder="Enter Pokemon name.."

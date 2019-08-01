@@ -60,6 +60,7 @@ export class PokeDetail extends Component {
           <h2>
             {this.props.name.charAt(0).toUpperCase() + this.props.name.slice(1)}
           </h2>
+          <p>{this.props.classification}</p>
           <h3
             style={{
               border: borderControl(),
