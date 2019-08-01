@@ -15,6 +15,7 @@ export class App extends Component {
     term: "",
     text: "",
     type: "",
+    type2: "",
     classification: ""
   };
 
@@ -26,13 +27,18 @@ export class App extends Component {
     console.log(response);
     console.log(response2);
     if (this.state.term !== "") {
-      this.setState({ name: response.name });
-      this.setState({ url: response.sprites.front_default });
       this.setState({
+        name: response.name,
+        url: response.sprites.front_default,
         text: response2.flavor_text_entries[2].flavor_text,
-        classification: response2.genera[2].genus
+        classification: response2.genera[2].genus,
+        type: response.types[0].type.name
       });
-      this.setState({ type: response.types[0].type.name });
+      if (response.types[1]) {
+        this.setState({ type2: response.types[1].type.name });
+      } else {
+        this.setState({ type2: "" });
+      }
     } else {
       alert("Please enter a valid Pokemon name");
     }
@@ -54,6 +60,7 @@ export class App extends Component {
             text={this.state.text}
             types={this.state.type}
             classification={this.state.classification}
+            type2={this.state.type2}
           />
 
           <input

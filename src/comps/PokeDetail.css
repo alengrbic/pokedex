@@ -23,6 +23,11 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.types {
+  display: flex;
+  flex-direction: row;
+}
+
 .texts h2 {
   margin-bottom: 0.2rem;
 }
@@ -84,9 +89,28 @@ p {
     height: 100px;
     margin-bottom: 1110px;
   }
+
+  .types {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 411px) {
+  .texts h4 {
+    font-size: 0.6rem;
+    padding: 3px;
+  }
+  .texts h2 {
+    padding: 3px;
+    font-size: 1rem;
+  }
+  .texts h3 {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .texts h4 {
     font-size: 0.6rem;
     padding: 3px;
