@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Pokedex from "pokedex-promise-v2";
 import PokeDetail from "./PokeDetail";
+//Unused Component PokeList
+/* import PokeList from "./PokeList"; */
 import "./App.css";
 const P = new Pokedex();
 

@@ -2,6 +2,15 @@ body {
   font-family: "Press Start 2P", cursive;
   margin: 0;
 }
+.wrap {
+  max-width: 80vw;
+  min-height: 100vh;
+  margin: auto;
+  margin-top: 0;
+  background-color: rgba(51, 51, 25, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .main {
   margin: auto;
@@ -16,6 +25,26 @@ body {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+/* Unused CSS for Component */
+/* .pokelist {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: crimson;
+  border: 2px solid crimson;
+  border-radius: 15px;
+  min-height: 70vh;
+  max-height: 71.5vh;
+  max-width: 50vw;
+  min-width: 50vw;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+} */
 
 .containers {
   border: 1rem solid crimson;
@@ -33,7 +62,7 @@ body {
   width: 150px;
   height: 40px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: block;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
@@ -68,7 +97,8 @@ input {
     max-width: 70vw;
   }
   input {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
+    margin-top: 0.5rem;
   }
 }
 

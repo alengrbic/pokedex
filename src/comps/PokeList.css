@@ -1,0 +1,14 @@
+/* Unused Component CSS */
+
+.poke {
+  color: aliceblue;
+  min-width: 200px;
+  min-height: 200px;
+  margin: auto;
+  display: inline-block;
+}
+
+.poke img {
+  width: 150px;
+  height: 150px;
+}
