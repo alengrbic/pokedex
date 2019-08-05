@@ -2,7 +2,7 @@
   background-color: #ddd;
   min-height: 22vh;
   position: static;
-  border: 1px solid crimson;
+  border: 5px solid black;
   border-radius: 15px;
 
   max-width: 30vh;
@@ -19,7 +19,7 @@ img {
 .texts {
   background-color: #ddd;
   min-height: 30vh;
-  border: 1px solid crimson;
+  border: 5px solid black;
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
